@@ -121,8 +121,8 @@ jobs:
       - name: Copy ARTICLE.en_us.html to release directory
         run: cp documentation/ARTICLE.en_us.html ${{ env.ZIP_NAME }}/ARTICLE.en_us.html
         continue-on-error: true
-      - name: Copy OFL.txt to release directory
-        run: cp OFL.txt ${{ env.ZIP_NAME }}/OFL.txt
+      - name: Copy LICENSE.txt to release directory
+        run: cp LICENCE.txt ${{ env.ZIP_NAME }}/LICENCE.txt
       - name: Remove proof/test outputs from release
         run: rm -rf ${{ env.ZIP_NAME }}/out
       - name: Set release file name
