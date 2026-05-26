@@ -24,9 +24,6 @@ venv: venv/touchfile
 build.stamp: venv .init.stamp sources/config.yaml $(SOURCES)
 	. venv/bin/activate; rm -rf fonts/; gftools builder sources/config.yaml && touch build.stamp; rm -rf instance_ufo/; python3 scripts/fixTTHinting.py; python3 scripts/makeWebfonts.py; mkdir -p fonts/variable-subset; fonttools varLib.instancer fonts/variable/UbuntuSansMono[wght].ttf wght=400:700 -o fonts/variable-subset/UbuntuSansMono[wght]-subset.ttf
 
-.init.stamp: venv
-	. venv/bin/activate; python3 scripts/first-run.py
-
 venv/touchfile: requirements.txt
 	test -d venv || python3 -m venv venv
 	. venv/bin/activate; pip install -Ur requirements.txt
@@ -35,6 +32,9 @@ venv/touchfile: requirements.txt
 test: build.stamp
 	which fontspector || (echo "fontspector not found. Please install it with 'cargo install fontspector'." && exit 1)
 	TOCHECK=$$(find fonts/variable -type f 2>/dev/null); if [ -z "$$TOCHECK" ]; then TOCHECK=$$(find fonts/ttf -type f 2>/dev/null); fi ; mkdir -p out/ out/fontspector; fontspector --profile googlefonts -l warn --full-lists --succinct --html out/fontspector/fontspector-report.html --ghmarkdown out/fontspector/fontspector-report.md --badges out/badges $$TOCHECK  || echo '::warning file=sources/config.yaml,title=fontspector failures::The fontspector QA check reported errors in your font. Please check the generated report.'
+
+proof: venv build.stamp
+	TOCHECK=$$(find fonts/variable -type f 2>/dev/null); if [ -z "$$TOCHECK" ]; then TOCHECK=$$(find fonts/ttf -type f 2>/dev/null); fi ; . venv/bin/activate; mkdir -p out/ out/proof; diffenator2 proof $$TOCHECK -o out/proof
 
 images: venv $(DRAWBOT_OUTPUT)
 
