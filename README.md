@@ -1,58 +1,86 @@
-# Ubuntu Sans Mono Font Family
+# Softness Mono
 
-[![][Fontbakery]](https://canonical.github.io/Ubuntu-Sans-Mono-fonts/fontbakery/fontbakery-report.html)
-[![][Universal]](https://canonical.github.io/Ubuntu-Sans-Mono-fonts/fontbakery/fontbakery-report.html)
-[![][GF Profile]](https://canonical.github.io/Ubuntu-Sans-Mono-fonts/fontbakery/fontbakery-report.html)
-[![][Outline Correctness]](https://canonical.github.io/Ubuntu-Sans-Mono-fonts/fontbakery/fontbakery-report.html)
-[![][Shaping]](https://canonical.github.io/Ubuntu-Sans-Mono-fonts/fontbakery/fontbakery-report.html)
+**Softness Mono** is an experimental derivative of Ubuntu Sans Mono. The project begins with a rename-only baseline so the build, metadata, and quality checks can be stabilized before any glyph outlines are changed.
 
-[Fontbakery]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcanonical%2FUbuntu-Sans-Mono-fonts%2Fgh-pages%2Fbadges%2Foverall.json
-[GF Profile]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcanonical%2FUbuntu-Sans-Mono-fonts%2Fgh-pages%2Fbadges%2FGoogleFonts.json
-[Outline Correctness]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcanonical%2FUbuntu-Sans-Mono-fonts%2Fgh-pages%2Fbadges%2FOutlineCorrectnessChecks.json
-[Shaping]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcanonical%2FUbuntu-Sans-Mono-fonts%2Fgh-pages%2Fbadges%2FShapingChecks.json
-[Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcanonical%2FUbuntu-Sans-Mono-fonts%2Fgh-pages%2Fbadges%2FUniversal.json
+> Current status: naming and build migration in progress. No intentional glyph-shape changes have been made yet.
 
-The **Ubuntu Font Family** are a set of matching libre/open fonts. The fonts were originally developed in 2010–2011, further expanded and improved in 2015, and expanded again in 2022–2023 when variable fonts were added. 
+## Lineage and attribution
 
-The development is being funded by Canonical Ltd on behalf the wider Free Software community and the Ubuntu project. The technical font design work and implementation has been undertaken by [Dalton Maag](http://daltonmaag.com), [Type Network](http://typenetwork.com), [DJR](http://djr.com), and [Dual Type](http://dualtype.design).
+Softness Mono is based on **Ubuntu Sans Mono**, originally commissioned and funded by Canonical Ltd. The original technical font design and implementation credits include Dalton Maag, Type Network, DJR, and Dual Type.
 
-Both the final font TrueType/OpenType files and the design files used to produce the font family are distributed under an open licence and you are expressly encouraged to experiment, modify, share and improve.
+This derivative is independent, is not affiliated with Canonical Ltd., and is not endorsed by Canonical Ltd.
 
-[http://font.ubuntu.com](http://font.ubuntu.com)
+The original upstream project is available at:
 
-![Sample Image](documentation/image1.png)
+- https://github.com/canonical/Ubuntu-Sans-Mono-fonts
 
-A proportional-width variant, **Ubuntu Sans**, is available in a separate repository: [https://github.com/canonical/ubuntu-sans-fonts](https://github.com/canonical/ubuntu-sans-fonts)
+The upstream repository remains configured as the source of the original design history. See `DERIVATIVE-NOTICE.md` for the derivative naming and attribution policy.
 
-## Releases
+## Design direction
 
-You can find recent releases and release candidates in the ["Releases" tab](https://github.com/canonical/Ubuntu-Sans-Mono-fonts/releases).
+Softness Mono will explore how a monospaced typeface can feel warmer, gentler, and more human without losing clarity, rhythm, or technical usefulness.
+
+The first milestone is deliberately conservative:
+
+- rename the family to Softness Mono
+- generate distinct font and PostScript names
+- preserve all original credits and licence terms
+- keep glyph outlines unchanged
+- establish a passing build and QA baseline
+
+Only after that baseline passes will letterform experiments begin.
 
 ## Building
 
-Fonts are built automatically by GitHub Actions - take a look in the ["Actions" tab](https://github.com/canonical/Ubuntu-Sans-Mono-fonts/actions) for the latest build.
+Fonts are built through the existing project toolchain.
 
-If you want to build fonts manually on your own computer:
+```bash
+make build
+```
 
-* `make build` will produce all font files formats.
-* `make dev` will produce only variable font files.
-* `make test` will run [FontBakery](https://github.com/googlefonts/fontbakery)'s quality assurance tests.
-* `make proof` will generate HTML proof files.
+Development variable-font build:
 
-The proof files and QA tests are also available automatically via GitHub Actions - look at https://canonical.github.io/Ubuntu-Sans-Mono-fonts.
+```bash
+make dev
+```
 
-It is possible to generate custom styles directly from the variable fonts using [fontTools instancer](https://fonttools.readthedocs.io/en/latest/varLib/instancer.html). For example, the following generates a custom style that is a close match to Ubuntu Mono’s original weight:
+Run quality checks:
 
-```fonttools varLib.instancer UbuntuSansMono[wght].ttf wght=473```
+```bash
+make test
+```
 
+Generate proofs:
+
+```bash
+make proof
+```
+
+Expected variable font filenames include:
+
+- `SoftnessMono[wght].ttf`
+- `SoftnessMono-Italic[wght].ttf`
+
+## Repository structure
+
+- `sources/` — designspaces and UFO source data
+- `scripts/` — build and post-processing utilities
+- `documentation/` — specimens and project documentation
+- `fonts/` — generated font binaries
+- `out/` — generated tests and proofs
+
+The source UFO directory names still retain their upstream filenames during the initial migration. This keeps the first change set focused on naming metadata and generated outputs rather than moving thousands of source files at once.
 
 ## Changelog
 
-See [FONTLOG.txt](FONTLOG.txt) for a summary of updates.
+See `FONTLOG.txt` for upstream history. Softness Mono-specific changes should also be recorded in `DERIVATIVE-NOTICE.md` until a dedicated derivative changelog is established.
 
+## Licence
 
-## License
+This Font Software is distributed under the **Ubuntu Font Licence Version 1.0**.
 
-This Font Software is licensed under the UBUNTU FONT LICENCE Version 1.0
-This license is available with a FAQ at
-https://ubuntu.com/legal/font-licence
+The licence and original copyright notices must remain with redistributed or modified copies. Softness Mono is a derivative name and must not be presented as an official Ubuntu or Canonical font.
+
+Licence information:
+
+- https://ubuntu.com/legal/font-licence
