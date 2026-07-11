@@ -12,12 +12,12 @@
     </axis>
   </axes>
   <sources>
-    <source filename="UbuntuSansMono-Thin.ufo" name="Ubuntu Sans Mono Thin" familyname="Ubuntu Sans Mono" stylename="Thin">
+    <source filename="UbuntuSansMono-Thin.ufo" name="Softness Mono Thin" familyname="Softness Mono" stylename="Thin">
       <location>
         <dimension name="Weight" xvalue="100"/>
       </location>
     </source>
-    <source filename="UbuntuSansMono-Regular.ufo" name="Ubuntu Sans Mono Regular" familyname="Ubuntu Sans Mono" stylename="Regular">
+    <source filename="UbuntuSansMono-Regular.ufo" name="Softness Mono Regular" familyname="Softness Mono" stylename="Regular">
       <lib copy="1"/>
       <groups copy="1"/>
       <features copy="1"/>
@@ -26,19 +26,19 @@
         <dimension name="Weight" xvalue="400"/>
       </location>
     </source>
-    <source filename="UbuntuSansMono-Bold.ufo" name="Ubuntu Sans Mono Bold" familyname="Ubuntu Sans Mono" stylename="Bold">
+    <source filename="UbuntuSansMono-Bold.ufo" name="Softness Mono Bold" familyname="Softness Mono" stylename="Bold">
       <location>
         <dimension name="Weight" xvalue="700"/>
       </location>
     </source>
   </sources>
   <instances>
-    <instance 
-        name="Ubuntu Sans Mono Thin" 
-        familyname="Ubuntu Sans Mono" 
-        stylename="Thin" 
-        filename="../instance_ufo/UbuntuSansMono-Thin.ufo" 
-        stylemapfamilyname="Ubuntu Sans Mono Thin" 
+    <instance
+        name="Softness Mono Thin"
+        familyname="Softness Mono"
+        stylename="Thin"
+        filename="../instance_ufo/SoftnessMono-Thin.ufo"
+        stylemapfamilyname="Softness Mono Thin"
         stylemapstylename="regular"
     >
       <location>
@@ -47,14 +47,13 @@
       <kerning/>
       <info/>
     </instance>
-    
-    
-    <instance 
-        name="Ubuntu Sans Mono ExtraLight" 
-        familyname="Ubuntu Sans Mono" 
-        stylename="ExtraLight" 
-        filename="../instance_ufo/UbuntuSansMono-ExtraLight.ufo" 
-        stylemapfamilyname="Ubuntu Sans Mono ExtraLight" 
+
+    <instance
+        name="Softness Mono ExtraLight"
+        familyname="Softness Mono"
+        stylename="ExtraLight"
+        filename="../instance_ufo/SoftnessMono-ExtraLight.ufo"
+        stylemapfamilyname="Softness Mono ExtraLight"
         stylemapstylename="regular"
     >
       <location>
@@ -64,13 +63,12 @@
       <info/>
     </instance>
 
-    
-    <instance 
-        name="Ubuntu Sans Mono Light" 
-        familyname="Ubuntu Sans Mono" 
-        stylename="Light" 
-        filename="../instance_ufo/UbuntuSansMono-Light.ufo" 
-        stylemapfamilyname="Ubuntu Sans Mono Light" 
+    <instance
+        name="Softness Mono Light"
+        familyname="Softness Mono"
+        stylename="Light"
+        filename="../instance_ufo/SoftnessMono-Light.ufo"
+        stylemapfamilyname="Softness Mono Light"
         stylemapstylename="regular"
     >
       <location>
@@ -80,42 +78,38 @@
       <info/>
     </instance>
 
-
-
-
-    <instance  
-        name="Ubuntu Sans Mono Regular" 
-        familyname="Ubuntu Sans Mono" 
-        stylename="Regular" 
-        filename="../instance_ufo/UbuntuSansMono-Regular.ufo" 
-        stylemapfamilyname="Ubuntu Sans Mono" 
+    <instance
+        name="Softness Mono Regular"
+        familyname="Softness Mono"
+        stylename="Regular"
+        filename="../instance_ufo/SoftnessMono-Regular.ufo"
+        stylemapfamilyname="Softness Mono"
         stylemapstylename="regular"
     >
       <location>
         <dimension name="Weight" xvalue="400"/>
       </location>
     </instance>
-    
-    <instance 
-        name="Ubuntu Sans Mono Medium" 
-        familyname="Ubuntu Sans Mono" 
-        stylename="Medium" 
-        filename="../instance_ufo/UbuntuSansMono-Medium.ufo" 
-        stylemapfamilyname="Ubuntu Sans Mono Medium" 
+
+    <instance
+        name="Softness Mono Medium"
+        familyname="Softness Mono"
+        stylename="Medium"
+        filename="../instance_ufo/SoftnessMono-Medium.ufo"
+        stylemapfamilyname="Softness Mono Medium"
         stylemapstylename="regular"
     >
       <location>
         <dimension name="Weight" xvalue="564"/>
       </location>
     </instance>
-    
-    
-    <instance 
-        name="Ubuntu Sans Mono SemiBold" 
-        familyname="Ubuntu Sans Mono" 
-        stylename="SemiBold" 
-        filename="../instance_ufo/UbuntuSansMono-SemiBold.ufo" 
-        stylemapfamilyname="Ubuntu Sans Mono SemiBold" 
+
+    <instance
+        name="Softness Mono SemiBold"
+        familyname="Softness Mono"
+        stylename="SemiBold"
+        filename="../instance_ufo/SoftnessMono-SemiBold.ufo"
+        stylemapfamilyname="Softness Mono SemiBold"
         stylemapstylename="regular"
     >
       <location>
@@ -125,13 +119,12 @@
       <info/>
     </instance>
 
-    
-    <instance 
-        name="Ubuntu Sans Mono Bold" 
-        familyname="Ubuntu Sans Mono" 
-        stylename="Bold" 
-        filename="../instance_ufo/UbuntuSansMono-Bold.ufo" 
-        stylemapfamilyname="Ubuntu Sans Mono" 
+    <instance
+        name="Softness Mono Bold"
+        familyname="Softness Mono"
+        stylename="Bold"
+        filename="../instance_ufo/SoftnessMono-Bold.ufo"
+        stylemapfamilyname="Softness Mono"
         stylemapstylename="bold"
     >
       <location>
