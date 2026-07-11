@@ -9,79 +9,73 @@
     </axis>
   </axes>
 
-  <!-- Sources -->
   <sources>
-    <source filename="UbuntuSansMono-Italic.ufo" name="Ubuntu Sans Mono Italic" familyname="Ubuntu Sans Mono" stylename="Italic">
+    <source filename="UbuntuSansMono-Italic.ufo" name="Softness Mono Italic" familyname="Softness Mono" stylename="Italic">
       <lib copy="1"/>
       <groups copy="1"/>
       <features copy="1"/>
       <info copy="1"/>
       <location>
-        <dimension
- name="Weight" xvalue="400"/>
+        <dimension name="Weight" xvalue="400"/>
       </location>
     </source>
-    <source filename="UbuntuSansMono-BoldItalic.ufo" name="Ubuntu Sans Mono Bold Italic" familyname="Ubuntu Sans Mono" stylename="Bold">
+    <source filename="UbuntuSansMono-BoldItalic.ufo" name="Softness Mono Bold Italic" familyname="Softness Mono" stylename="Bold">
       <location>
-        <dimension
- name="Weight" xvalue="700"/>
+        <dimension name="Weight" xvalue="700"/>
       </location>
     </source>
   </sources>
 
-  <!-- Instances -->
   <instances>
     <instance
-        name="Ubuntu Sans Mono Italic"
-        familyname="Ubuntu Sans Mono" stylename="Italic" 
-        filename="../instance_ufo/UbuntuSansMono-Italic.ufo"     
-        stylemapfamilyname="Ubuntu Sans Mono" 
+        name="Softness Mono Italic"
+        familyname="Softness Mono"
+        stylename="Italic"
+        filename="../instance_ufo/SoftnessMono-Italic.ufo"
+        stylemapfamilyname="Softness Mono"
         stylemapstylename="italic"
     >
       <location>
-        <dimension
- name="Weight" xvalue="400"/>
+        <dimension name="Weight" xvalue="400"/>
       </location>
     </instance>
-    
+
     <instance
-        name="Ubuntu Sans Mono Medium Italic"
-        familyname="Ubuntu Sans Mono" stylename="Medium Italic" 
-        filename="../instance_ufo/UbuntuSansMono-MediumItalic.ufo" 
-        stylemapfamilyname="Ubuntu Sans Mono Medium" 
+        name="Softness Mono Medium Italic"
+        familyname="Softness Mono"
+        stylename="Medium Italic"
+        filename="../instance_ufo/SoftnessMono-MediumItalic.ufo"
+        stylemapfamilyname="Softness Mono Medium"
         stylemapstylename="italic"
     >
       <location>
-        <dimension
- name="Weight" xvalue="564"/>
+        <dimension name="Weight" xvalue="564"/>
       </location>
     </instance>
-    
-    
+
     <instance
-        name="Ubuntu Sans Mono SemiBold Italic"
-        familyname="Ubuntu Sans Mono" stylename="SemiBold Italic" 
-        filename="../instance_ufo/UbuntuSansMono-SemiBoldItalic.ufo" 
-        stylemapfamilyname="Ubuntu Sans Mono SemiBold" 
+        name="Softness Mono SemiBold Italic"
+        familyname="Softness Mono"
+        stylename="SemiBold Italic"
+        filename="../instance_ufo/SoftnessMono-SemiBoldItalic.ufo"
+        stylemapfamilyname="Softness Mono SemiBold"
         stylemapstylename="italic"
     >
       <location>
-        <dimension
- name="Weight" xvalue="632"/>
+        <dimension name="Weight" xvalue="632"/>
       </location>
     </instance>
-    
+
     <instance
-        name="Ubuntu Sans Mono Bold Italic"
-        familyname="Ubuntu Sans Mono" 
-        stylename="Bold Italic"     
-        filename="../instance_ufo/UbuntuSansMono-BoldItalic.ufo"     
-        stylemapfamilyname="Ubuntu Sans Mono" 
+        name="Softness Mono Bold Italic"
+        familyname="Softness Mono"
+        stylename="Bold Italic"
+        filename="../instance_ufo/SoftnessMono-BoldItalic.ufo"
+        stylemapfamilyname="Softness Mono"
         stylemapstylename="bold italic"
     >
       <location>
-        <dimension
- name="Weight" xvalue="700"/>
+        <dimension name="Weight" xvalue="700"/>
       </location>
     </instance>
   </instances>
