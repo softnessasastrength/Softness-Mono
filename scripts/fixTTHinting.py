@@ -3,8 +3,8 @@ from ttfautohint import ttfautohint
 from ttfautohint.options import parse_args as ttfautohint_parse_args
 
 ttfs_fonts_dir = "fonts/ttf"
-roman_referenceFontPath = "fonts/ttf/UbuntuSansMono-Regular.ttf"
-italic_referenceFontPath = "fonts/ttf/UbuntuSansMono-Italic.ttf"
+roman_referenceFontPath = "fonts/ttf/SoftnessMono-Regular.ttf"
+italic_referenceFontPath = "fonts/ttf/SoftnessMono-Italic.ttf"
 
 for fontfile in os.listdir(ttfs_fonts_dir):
     if fontfile.split(".")[-1] == "ttf":

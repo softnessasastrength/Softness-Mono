@@ -1,6 +1,6 @@
 sources:
-  - UbuntuSansMono.designspace
-  - UbuntuSansMono-Italic.designspace
+  - SoftnessMono.designspace
+  - SoftnessMono-Italic.designspace
 axisOrder:
   - wght
   - ital
